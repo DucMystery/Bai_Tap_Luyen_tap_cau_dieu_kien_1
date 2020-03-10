@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+  <script>
+      let kt= parseFloat(prompt("Mời bạn nhập vào điểm kiểm tra: "));
+      let gk= parseFloat(prompt("Mời bạn nhập vào điểm giữa kì: "));
+      let ck= parseFloat(prompt("Mời bạn nhập vào điểm cuối kì: "));
+      let tb=(kt+gk*2+ck*3)/6;
+      if(kt<0 || gk<0|| ck<0){
+          document.write("Mời kiểm tra lại điểm")
+      }else
+          if (tb>=8 && tb<=10){
+          document.write("Xếp loại học lực giỏi");
+          }else if (tb>=6.5 && tb<8){
+          document.write("Xếp loại học lực Khá");
+          }else if (tb>=5 && tb<6.5){
+          document.write("Xếp loại học lực TB");
+           }else {
+          document.write("Xếp loại học lực yếu");
+      }
+  </script>
+</body>
+</html>

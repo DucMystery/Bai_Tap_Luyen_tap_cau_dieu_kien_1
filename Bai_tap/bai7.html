@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 7</title>
+</head>
+<body>
+  <script>
+      let m= parseFloat(prompt("Mời nhập vào số phút đã gọi :"));
+      let t=0;
+      if(m>=200){
+          t=m*800;
+          document.write("Số tiền : "+t + " VND");
+      }else if (m<200 && m>=100){
+          t= m* 1000;
+          document.write("Số tiền : "+t +" VND");
+      }else if (m<100 && m>=0){
+          t=m*1500;
+          document.write("Số tiền : "+t +" VND")
+      }else {
+          alert("Yêu cầu kiểm tra lại số phút!");
+      }
+  </script>
+</body>
+</html>

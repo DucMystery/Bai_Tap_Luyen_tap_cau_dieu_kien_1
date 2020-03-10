@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+   <script>
+       let n = parseFloat(prompt("Mời bạn nhập vào Doanh thu tháng này: "));
+       let m=0;
+       if (n>=50){
+          m=n*10/100;
+          document.write("Hoa Hồng bạn nhận được tháng này là : "+ m);
+       }else if (n<50 && n>=25){
+           m= n*5/100;
+           document.write("Hoa hồng bạn nhận được là : "+ m);
+       }else if (n>=0 && n<25){
+           m=n*2/100;
+           document.write("Hoa hồng bạn nhận được là : "+ m);
+       }else {
+           document.write("Yêu cầu kiểm tra Doanh Thu Đã nhập");
+       }
+   </script>
+</body>
+</html>
